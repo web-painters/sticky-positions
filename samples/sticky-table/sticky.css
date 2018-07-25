@@ -1,0 +1,37 @@
+* {
+     font-family: sans-serif;
+ }
+
+body {
+    height: 1000px;
+}
+
+:root {
+    --table-text-color: #ffffff;
+    --light-bg: #666666;
+    --dark-bg: #000000;
+}
+
+table {
+    color: var(--table-text-color);
+    background-color: var(--light-bg);
+    padding: 5px;
+    width: 100%;
+}
+
+table, th, td{
+    border: 1px solid var(--table-text-color);
+    border-collapse: collapse;
+    padding: 10px 5px;
+}
+
+table tr th {
+    text-align: left;
+    border-bottom: 1px solid var(--table-text-color);
+}
+
+table thead, table thead tr, table thead tr th {
+    position: sticky;
+    top: -5px;
+    background-color: var(--dark-bg);
+}
